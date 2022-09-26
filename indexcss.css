@@ -1,3 +1,4 @@
+/* Polices */
 @font-face {
     font-family: "dAdvance";
     src: url("fonts/Deadly Advance.ttf");
@@ -14,11 +15,17 @@
     font-family: "textfont1";
     src: url("fonts/Pocket Money.ttf");
 }
+/* Variables */
+:root{
+    
+}
 
+/* BODY */
 body{
     margin: 0%;
 }
 
+/* Page Web */
 #containerPrincipal{
     display:grid;
     grid-template-columns: 200px 1fr;
@@ -86,7 +93,7 @@ body{
 
 #description{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background: rgb(221,0,0);
     background: linear-gradient(180deg, rgba(221,0,0,0.9581582633053222) 0%, rgba(255,211,0,0.6696428571428572) 100%);
     border-radius: 10px;
@@ -99,6 +106,15 @@ body{
     text-align: center;
     font-family: "gofont";
     color: blueviolet;
+}
+
+#textdesc{
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+    color: greenyellow;
+    font-size: 24px;
+    font-family: "textfont1";
 }
 
 #feets{
