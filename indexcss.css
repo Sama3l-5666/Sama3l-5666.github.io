@@ -17,7 +17,7 @@
 }
 /* Variables */
 :root{
-    
+    /*ajouter variables*/
 }
 
 /* BODY */
@@ -41,6 +41,7 @@ body{
     text-align: center;
     background: url(images/headbanner.jpg);
     background-size: cover;
+    border-bottom: 12px solid black;
 }
 
 #header > h1{
@@ -109,7 +110,7 @@ body{
 }
 
 #textdesc{
-    width: 100%;
+    
     padding: 20px;
     text-align: justify;
     color: greenyellow;
@@ -128,4 +129,27 @@ body{
     flex-direction: row-reverse;
     padding-right: 20px;
     padding-top: 60px;
+}
+
+@media screen and (max-width: 600px) {
+    #containerPrincipal{
+        grid-template-columns: 100%;
+        grid-template-rows: 120px 200px 800px 120px;
+        grid-template-areas: 
+        "header"
+        "menu"
+        "basecontainer"
+        "feets"
+        ;
+    }
+    #header > h1{
+        font-size: 40px;
+    }
+    #menu{
+        display: flex;
+        flex-direction: row;
+    }
+    #textdesc{
+        
+    }
 }
