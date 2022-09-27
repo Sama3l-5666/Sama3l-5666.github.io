@@ -33,7 +33,7 @@ body{
     grid-template-areas: 
     "header header"
     "menu basecontainer"
-    "menu feets";
+    "feets feets";
 }
 
 #header{
@@ -148,8 +148,5 @@ body{
     #menu{
         display: flex;
         flex-direction: row;
-    }
-    #textdesc{
-        
     }
 }
