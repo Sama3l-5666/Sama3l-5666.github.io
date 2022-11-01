@@ -1,0 +1,107 @@
+body, html{
+    margin: 0px;
+    height: 100%;
+}
+/* Initaliser des variables CSS [utiliser avec var(--variable)] */
+:root{
+    --bordure-rouge: #fc0303;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("../assets/fonts/Oswald-Regular.ttf");
+}
+@font-face {
+    font-family: "Faustina";
+    src: url("../assets/fonts/Faustina-Regular.ttf");
+}
+
+#mainContainer{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/images/Background.jpg");
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "image description";
+}
+
+#image{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 70%;
+    width: 100%;
+    grid-area: image;
+    align-items: center;
+}
+#image > img{
+    height: 70%;
+}
+
+#description{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding-top: 10%;
+    grid-area: description;
+}
+
+#ciboire{
+    font-size: 40px;
+    height: 20px;
+    font-family: "Oswald";
+    text-align: justify;
+}
+
+#classic{
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    font-family: "Faustina";
+    border-bottom: 3px solid #ca2417;
+}
+
+#descbiere{
+    width: 60%;
+    font-family: "Faustina";
+    font-size: 20px;
+    text-align: justify;
+    color: #6f706f;
+}
+
+#slogan{
+    font-family: "Faustina";
+}
+
+#caracteristic{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80% 20%;
+    grid-template-areas: "percentage caracteristic2 caracteristic3 caracteristic4 densité"
+    "dispo dispo dispo dispo densité";
+    width: 80%;
+    border: 2px solid #d5d5d5;
+}
+
+.car1{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.car1 > h1 , p{
+    margin: 2px;
+}
+
+#percentage{
+    grid-area: percentage;
+}
+#caracteristic2{
+
+}
+#caracteristic3{
+
+}
+#caracteristic4{
+
+}

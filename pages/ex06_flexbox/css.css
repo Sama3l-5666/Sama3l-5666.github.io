@@ -1,0 +1,39 @@
+html, body {height: 100%;width: 100%;margin: 0px;;}
+.container{
+    padding: 0px 10px 10px 10px;
+}
+#Groscontainer{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+#Petitcontainer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 5;   
+}
+#Minicontainer{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 60%;
+}
+#navigation{
+    background-color: aqua;
+    flex-grow: 1;
+}
+#header{
+    background-color: red;
+    flex-basis: 20%;
+}
+#footer{
+    background-color: red;
+    flex-basis: 20%;
+}
+#article{
+    background-color: green;
+    flex-grow: 1;
+}
+#aside{
+    background-color: blueviolet;
+    flex-grow: 3;
+}

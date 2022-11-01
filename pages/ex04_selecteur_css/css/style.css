@@ -1,0 +1,22 @@
+#titrePage{
+    font-size: 300%;
+    color: red;
+    text-align: center;
+}
+span{
+    font-size: 200%;
+    font-style: italic;
+}
+p{
+    text-align: justify;
+}
+#lett1p{
+    color: purple;
+}
+#lett1{
+    color: green;
+}
+#rule1:hover{
+    color: rgb(0, 183, 255);
+}
+

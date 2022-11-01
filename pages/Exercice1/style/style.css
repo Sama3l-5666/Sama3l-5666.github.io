@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "digital";
+    src: url("../fonts/digital.ttf");
+}
+
+#mainContainer{
+    display: grid;
+    /*display date, heure and heureCopilot in 3 columns*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area:"date heure heureCopilot";
+}
+
+.datetheure{
+    font-family: "digital";
+    font-size: 8em;
+    width: 100%;
+    text-align: center;
+}
+
+/* when on mobile screen, display date, heure and heureCopilot in 3 rows*/
+@media screen and (max-width: 600px) {
+    #mainContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-area:"date heure heureCopilot";
+    }
+}
